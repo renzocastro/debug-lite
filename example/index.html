@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Browser globals example | Debug Lite</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+</head>
+<body>
+  <div class="navbar is-link">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item title is-4" href="https://github.com/renzocastro/debug-lite">
+          Debug Lite » Browser globals example
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <section class="section">
+      <p>Open browser's console and try:</p>
+      <br>
+<p><strong>Show all messages</strong></p>
+<pre><code>localStorage.DEBUG = '*';
+window.location.reload();</code></pre>
+<br>
+<p><strong>Show all messages that start with namespace 'Module 1:'</strong></p>
+<pre><code>localStorage.DEBUG = 'Module 1:*';
+window.location.reload();</code></pre>
+<br>
+<p><strong>Show all messages with namespace 'Module 1:' and 'Module 2:'</strong></p>
+<pre><code>localStorage.DEBUG = 'Module 1:*,Module 2:*';
+window.location.reload();</code></pre>
+<br>
+<p><strong>Show only messages with namespace 'Module 1:init'</strong></p>
+<pre><code>localStorage.DEBUG = 'Module 1:init';
+window.location.reload();</code></pre>
+<br>
+<p><strong>Show only messages with namespace 'Module 1:build'</strong></p>
+<pre><code>localStorage.DEBUG = 'Module 1:build';
+window.location.reload();</code></pre>
+<br>
+<p><strong>Hide all messages</strong></p>
+<pre><code>localStorage.removeItem('DEBUG');
+window.location.reload();</code></pre>
+  </section>
+    <script src="../dist/debug-lite.umd.min.js"></script>
+    <script src="app.js"></script>
+  </div>
+</body>
+</html>

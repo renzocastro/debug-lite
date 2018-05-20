@@ -1,0 +1,21 @@
+{
+  "name": "debug-lite",
+  "version": "1.0.0",
+  "description": "A very tiny Javascript debugging utility. It's a lite version of debug.",
+  "main": "src/debug-lite.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renzocastro/debug-lite.git"
+  },
+  "keywords": [
+    "debug",
+    "logger",
+    "console.log"
+  ],
+  "author": "Renzo Castro <renzo.vista@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/renzocastro/debug-lite/issues"
+  },
+  "homepage": "https://github.com/renzocastro/debug-lite#readme"
+}
