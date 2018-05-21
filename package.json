@@ -1,6 +1,6 @@
 {
   "name": "debug-lite",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A very tiny Javascript debugging utility. It's a lite version of debug.",
   "main": "src/debug-lite.js",
   "repository": {
