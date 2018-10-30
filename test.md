@@ -23,6 +23,35 @@ Android Studio
 Check if you have to installed JDK (Java).
 
 ```console
+~$ javac -version
+javac 1.8.0_181
+```
+```console
+foo@bar:~$ javac -version
+javac 1.8.0_181
+
+$ javac -version
+javac 1.8.0_181
+```
+
+```console
+$ javac -version
+javac 1.8.0_181
+
+$ javac -version
+javac 1.8.0_181
+```
+
+```console
+javac -version
+javac 1.8.0_181
+
+javac -version
+javac 1.8.0_181
+```
+
+
+```console
 $ javac -version
 javac 1.8.0_181
 ```
