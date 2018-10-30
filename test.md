@@ -27,6 +27,30 @@ $ javac -version
 javac 1.8.0_181
 ```
 
+```shell
+$ javac -version
+  javac 1.8.0_181
+```
+```shell
+$ javac -version
+    javac 1.8.0_181
+```
+```shell
+$ javac -version
+
+javac 1.8.0_181
+```
+```shell
+$ javac -version
+
+  javac 1.8.0_181
+```
+```shell
+$ javac -version
+
+    javac 1.8.0_181
+```
+
 echo $JAVA_HOME
 
 ```bash
