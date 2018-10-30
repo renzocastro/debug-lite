@@ -22,30 +22,30 @@ Android Studio
 
 Check if you have to installed JDK (Java).
 
-```shell
+```console
 $ javac -version
 javac 1.8.0_181
 ```
 
-```shell
+```console
 $ javac -version
   javac 1.8.0_181
 ```
-```shell
+```console
 $ javac -version
     javac 1.8.0_181
 ```
-```shell
+```console
 $ javac -version
 
 javac 1.8.0_181
 ```
-```shell
+```console
 $ javac -version
 
   javac 1.8.0_181
 ```
-```shell
+```console
 $ javac -version
 
     javac 1.8.0_181
@@ -78,7 +78,7 @@ export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools:$PATH
 
 
-```shell
+```console
 $ tns doctor
 ✔ Getting environment information
 
