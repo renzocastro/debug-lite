@@ -1,10 +1,10 @@
 'use strict';
 /**
- * Debug Lite v1.0.0
+ * Debug Lite v1.0.1
  * https://github.com/renzocastro/debug-lite
  */
 
-let namespaces = {};
+const namespaces = {};
 const storage = localstorage();
 
 function localstorage() {
@@ -13,15 +13,15 @@ function localstorage() {
   } catch (e) {}
 }
 
-let colors = [];
+const colors = [];
 for (let i = 0; i <= 355; i += 24) {
   colors.push(`hsl(${i % 355}, 100%, 60%)`);
 }
 
 const selectColor = namespace => {
-  let hash = 0, i;
+  let hash = 0;
 
-  for (i in namespace) {
+  for (let i in namespace) {
     hash  = ((hash << 5) - hash) + namespace.charCodeAt(i);
     hash |= 0; // Convert to 32bit integer
   }
@@ -29,14 +29,13 @@ const selectColor = namespace => {
   return colors[Math.abs(hash) % colors.length];
 }
 
-let createDebug = (namespace, color) => {
-  let debug = function () {
+const createDebug = (namespace, color) => {
+  const debug = function (...args) {
     debug.enabled = !!debug.enabled;
     debug.color = debug.color || color || selectColor(namespace);
 
     if (!createDebug.enabled(namespace)) return;
 
-    var args = Array.prototype.slice.call(arguments, 0);
     args.unshift(`%c${namespace} »`, `color: ${debug.color};`);
     console.log.apply(console, args);
   };
@@ -99,6 +98,6 @@ createDebug.enabled = namespace => {
 };
 
 module.exports = {
-  createDebug: createDebug,
+  createDebug,
   nothing: function () { return function () { } }
 }
